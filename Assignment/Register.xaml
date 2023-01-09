@@ -1,0 +1,81 @@
+﻿<Window x:Class="Assignment.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="https://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment"
+        mc:Ignorable="d"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Title="Register" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="1" Source="https://cdn-icons-png.flaticon.com/512/295/295128.png" Stretch="UniformToFill"></Image>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Grid.Column="0">
+            <TextBlock Text="Register Page" FontSize="28"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Border CornerRadius="25 25 25 25" Width="300" Height="50" Background="Gray">
+                    <TextBox x:Name="FirstName" Width="250" Text="First Name" Background="Gray"></TextBox>
+                </Border>
+            </StackPanel>
+            <Separator Height="0"></Separator>
+
+            <StackPanel Orientation="Horizontal">
+                <Border CornerRadius="25 25 25 25" Width="300" Height="50" Background="Gray">
+                    <TextBox x:Name="LastName" Width="250" Text="Last Name" Background="Gray"></TextBox>
+                </Border>
+            </StackPanel>
+            <Separator Height="0"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <Border CornerRadius="25 25 25 25" Width="300" Height="50" Background="Gray">
+                    <TextBox x:Name="Gender" Width="250" Text="Gender" Background="Gray"></TextBox>
+                </Border>
+                
+            </StackPanel>
+            <Separator Height="0"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <Border CornerRadius="25 25 25 25" Width="300" Height="50" Background="Gray">
+                    <TextBox x:Name="Email" Width="250" Text="Email" Background="Gray"></TextBox>
+                </Border>
+
+            </StackPanel>
+            <Separator Height="0"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <Border CornerRadius="25 25 25 25" Width="300" Height="50" Background="Gray">
+                    <TextBox x:Name="DateOfBirth" Width="250" Text="Date Of Birth" Background="Gray"></TextBox>
+                </Border>
+
+            </StackPanel>
+            <Separator Height="0"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <Border CornerRadius="25 25 25 25" Width="300" Height="50" Background="Gray">
+                    <TextBox x:Name="Password" Width="250" Text="Password" Background="Gray"></TextBox>
+                </Border>
+
+            </StackPanel>
+            <Separator Height="0"></Separator>
+            <StackPanel Orientation="Horizontal">
+                <Border CornerRadius="25 25 25 25" Width="300" Height="50" Background="Gray">
+                    <TextBox x:Name="ConfirmPassword" Width="250" Text="Confirm password" Background="Gray"></TextBox>
+                </Border>
+
+            </StackPanel>
+            <Separator Height="0"></Separator>
+
+            <Button x:Name="Register_Bttn" Content="Register" Width="200" Height="40" Background="Blue" Click="Register_Bttn_Click"></Button>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
